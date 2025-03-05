@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+
+.image-wrapper {
+    width: 33.3333%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 20px solid silver;
+}
+
+.image-wrapper.first {
+    border-radius: 50%;
+    height: 70%;
+    background-image: url('../img/1.jpg');
+}
+
+.image-wrapper.second {
+    background-image: url('../img/2.jpg');
+}
+
+.image-wrapper.third {
+    height: 70%;
+    border-radius: 50%;
+    background-image: url('../img/3.jpg');
+}
+
+body, html {
+    height: 100%;
+
+}
+
+
+a {
+    color: silver;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.block {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    border-top: 4px solid silver;
+    border-bottom: 4px solid silver;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    float: left;
+    z-index: 2;
+}
+
+.dva {
+    background-position: left left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    position: relative;
+}
+
+.one {
+    background-image: url('../images/2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    z-index: 0;
+    position: relative;
+}
